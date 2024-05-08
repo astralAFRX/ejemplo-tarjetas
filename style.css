@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.padreKontenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 25px;
+    max-width: 1340px;
+    margin: auto;
+}
+
+.tarjeta {
+    background-color: aliceblue;
+    /* width: 350px; */
+    max-width: 320px;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 8px 10px 0px 0px black;
+}
+.tarjeta-screen{
+    /* position:relative │ absolute */
+    position: relative;
+    /* background-color: aquamarine; */
+    border-radius: 15px;
+}
+
+.tarjeta-Botons{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.342);
+    border-radius: 15px;
+    top: 0;
+    padding: 10px;
+}
+
+.btn-arriba{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: bisque; */
+}
+
+.btn-abajo{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    /* background-color: bisque; */
+
+}
+
+.tarjeta-screen>img{
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+}
+
+.tarjeta-screen:hover .tarjeta-Botons{
+    display: flex;
+}
+
+p.unoP {
+    background-color: black;
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: deepskyblue;
+}
+
+.tarjeta>h1{
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p.Txt-Dscription{
+    color: darkgrey;
+    line-height: 20px;
+    margin-bottom: 20px;
+
+}
+.maiztro img{
+    width: 35px;
+    vertical-align: middle;
+}
+.maiztro p{
+    display: inline-block;
+
+    margin-left: 5px;
+}
+
+/* estilos tablet */
+@media screen and (max-width: 992px){
+    
+    .padreKontenedor{
+            grid-template-columns: repeat(3, 1fr);
+    }
+    p.unoP {
+        background-color: blueviolet;
+    }
+    
+}
+
+/* estilos tablet2 */
+@media screen and (max-width: 850px) {
+
+    .padreKontenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+    p.unoP{
+        background-color: red;
+    }
+}
+
+/* estilos mobile */
+@media screen and (max-width: 550px) {
+
+    .padreKontenedor {
+        grid-template-columns: 1fr;
+    }
+    p.unoP{
+        background-color: greenyellow;
+    }
+    
+}
