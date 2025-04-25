@@ -73,14 +73,14 @@
 }
 
 p.unoP {
-    background-color: black;
+    background-color: purple;
     display: inline-block;
     font-size: 0.8em;
     padding: 5px 10px;
     border-radius: 3px;
     font-weight: 600;
     margin: 10px 0;
-    color: deepskyblue;
+    color: whitesmoke;
 }
 
 .tarjeta>h1{
@@ -111,7 +111,7 @@ p.Txt-Dscription{
             grid-template-columns: repeat(3, 1fr);
     }
     p.unoP {
-        background-color: blueviolet;
+        background-color: black;
     }
     
 }
